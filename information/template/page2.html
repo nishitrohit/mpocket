@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+</head>
+<body>
+    <form method="post"  action="/match">
+        {% csrf_token %}
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="email">Email id:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="vill">Village:</label>
+        <input type="text" id="vill" name="village"><br><br>
+
+        <label for="city">city</label>
+        <input type="text" id="city" name="city"><br><br>
+
+
+    <input type="submit" value="Submit">
+
+</body>
+</html>
